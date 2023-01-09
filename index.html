@@ -35,9 +35,6 @@
             <a href="#experience" class="list__link">Experience and courses</a>
           </li>
           <li class="list__item">
-            <a href="#example" class="list__link">Code example</a>
-          </li>
-          <li class="list__item">
             <a href="#education" class="list__link">Education</a>
           </li>
           <li class="list__item">
@@ -204,46 +201,6 @@
           </div>
         </div>
       </section>
-      <section id="example" class="main__example example">
-        <div class="example__container container">
-          <div class="example__row row">
-            <h2 class="example__title title">Code example</h2>
-            <h4 class="example__kata">Count characters in your string</h4>
-            <a href="https://www.codewars.com/kata/52efefcbcdf57161d4000091" class="example__link" target="_blank">6 kyu
-              kata from
-              Codewars</a>
-            <p class="example__desc">
-              The main idea is to count all the occurring characters in a
-              string. If you have a string like aba, then the result should be
-              <code>{'a': 2, 'b': 1}</code>. What if the string is empty? Then
-              the result should be empty object literal, <code>{}</code>.
-            </p>
-            <div class="example__code">
-              <pre><code class="code__js language-js hljs language-javascript">
-  const count = string => {  
-    if (string.length === 0) {
-      return {};
-    }
-
-    const strArr = string.split('').sort();
-    let countObj = {};
-    let count = 0;
-
-    for (let i = 0; i &lt; strArr.length; i++) {
-      if (strArr[i] !== strArr[i - 1]) {
-        count = 0;
-      }
-      count++;
-      countObj[strArr[i]] = count;
-    }
-    
-    return countObj;
-  }
-                </code></pre>
-            </div>
-          </div>
-        </div>
-      </section>
       <section id="education" class="main__education education">
         <div class="education__container container">
           <div class="education__row row">
@@ -327,11 +284,6 @@
             <div class="footer__item">
               <a href="https://github.com/davilexx" class="footer__link" target="_blank">
                 <img class="footer__img footer__img_gh" src="assets/svg/footer-gh.svg" alt="GitHub">
-              </a>
-            </div>
-            <div class="footer__item">
-              <a href="https://rs.school/js/" class="footer__link" target="_blank">
-                <img class="footer__img" src="assets/svg/footer-rs.svg" alt="RS School">
               </a>
             </div>
           </div>
