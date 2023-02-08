@@ -111,8 +111,8 @@ h6 {
     width: 30px;
     height: 20px;
     z-index: 999;
-    right: 2rem;
-    top: 2rem;
+    right: 1.35rem;
+    top: 1.35rem;
   }
 }
 @media screen and (max-width: 998px) {
