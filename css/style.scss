@@ -14,7 +14,7 @@ $color-accent-blue: rgb(0, 35, 230);
 
 // fonts
 @mixin font-inter {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -42,7 +42,7 @@ $color-accent-blue: rgb(0, 35, 230);
   color: $color-font;
 
   &::after {
-    content: "";
+    content: '';
     position: absolute;
     width: 100%;
     transform: scaleX(0);
@@ -192,7 +192,7 @@ h4 {
 
     &::before,
     &::after {
-      content: "";
+      content: '';
       background-color: $color-accent-blue;
       position: absolute;
       width: 30px;
@@ -402,11 +402,22 @@ h4 {
     }
   }
 
+  &__links {
+    @include flex-center-row();
+  }
+
   &__link {
     font-size: 2rem;
     position: relative;
     @include links();
     font-weight: 600;
+  }
+
+  &__gh {
+    text-decoration: none;
+    position: relative;
+    @include links();
+    color: $color-accent-blue;
   }
 
   &__description {
@@ -458,8 +469,25 @@ h4 {
   }
 
   &__item {
-    font-size: 1.2rem;
-    margin: 1rem 0rem;
+    font-size: 1.5rem;
+    margin: 1.5rem 0rem;
+    line-height: 2rem;
+
+    a,
+    span {
+      font-size: 1rem;
+    }
+
+    a {
+      text-decoration: none;
+      position: relative;
+      @include links();
+      color: $color-accent-blue;
+    }
+
+    span {
+      font-weight: 700;
+    }
 
     @media screen and (max-width: 1440px) {
       font-size: 1.4rem;
